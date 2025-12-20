@@ -1,0 +1,15 @@
+h1{
+ background-color: paleturquoise;
+ text-decoration-color: black;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+button {
+    background-color: cyan;
+    text-decoration-color: black;
+    border-color: black;
+    
+}
