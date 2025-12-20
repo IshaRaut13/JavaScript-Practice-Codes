@@ -12,19 +12,15 @@ console.log(h2)
 let divs = document.querySelectorAll("div")
 console.log(divs)
 
-// basic thing
-div[0].innerText = 'Hello'
-div[1].innerText = 'Isha'
-div[2].innerText = 'Raut'
-console.log(div)
+// // basic thing
+divs[0].innerText = 'Hello'
+divs[1].innerText = 'Isha'
+divs[2].innerText = 'Raut'
+console.log(divs)
 
-// instead using for-of loop
+// // instead using for-of loop
 id = 0
 for (let div of divs) {
     div.innerText = `This is unique text ${id}` //String Interpolation
     id++
 }
-
-
-
-
