@@ -25,6 +25,7 @@
     3. Selecting with tag --> document.getElementsByTagName('p')
     4. Query Selector --> document.querySelector('#myId / .myclass / mytag') --> returns first element
                           document.querySelectorAll('#myId / .myclass/ mytag') --> returns a NodeList
+    
 */
 
 // Properties of DOM
@@ -43,3 +44,53 @@ console.log(firstchild)
 let allchildren = document.querySelector('div').children
 console.dir(allchildren)
 
+
+// Attributes
+/*
+    getAttribute(attr) --> to get the attribute value
+    setAttribute(attr, value) --> to set the attribute val
+
+    //style
+    node.style
+*/
+
+let div = document.querySelector("div")
+console.log(div)
+
+let id = div.getAttribute("id")
+console.log(id)
+
+let name = div.getAttribute("name")
+console.log(name)
+
+//set attribute
+let para = document.body.querySelectorAll("p")
+console.log(para[2].setAttribute("class", "para"))
+
+//style
+let h1 = document.querySelector("h1")
+console.log(h1)
+console.log(h1.style.backgroundColor = "pink") //without css directly in js code
+
+
+//insert elements
+// node.append(el) ---> adds at the end of node(inside)
+let newBtn = document.createElement("button")
+newBtn.innerText = "Batao Mujhe"
+
+let divs = document.querySelector("div")
+divs.append(newBtn)
+
+// node.prepend(el) ---> adds at the start of node(inside)
+divs.prepend(newBtn)
+
+// node.before(el) ---> adds before the node(outside)
+divs.before(newBtn)
+
+// node.after(el) ---> adds after the node(outside)
+divs.after(newBtn)
+
+
+//delete element
+//node.remove()  ---> removes the node
+para[1].remove()
