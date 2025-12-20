@@ -1,6 +1,10 @@
-h1{
- background-color: paleturquoise;
- text-decoration-color: black;
+#heading {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    margin: 5px;
+    background-color: paleturquoise;
+    text-decoration-color: black;
 }
 
 body{
